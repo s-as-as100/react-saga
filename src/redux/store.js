@@ -6,3 +6,6 @@ const dummyReducer = ()=> {
 
 const store = createStore(dummyReducer);
 export default store;
+
+
+// store input is reducer and output is createStore
