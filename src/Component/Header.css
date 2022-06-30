@@ -1,0 +1,12 @@
+.header {
+    width: 100%;
+    background: palegreen;
+ 
+
+}
+
+.subHeader {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
