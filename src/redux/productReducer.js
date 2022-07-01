@@ -4,8 +4,7 @@ const productReducer = (data = [], action) => {
   switch (action.type) {
     case PRODUCT_LIST:
       return [action.data];
-
-    default:
+     default:
       return data;
   }
 };
