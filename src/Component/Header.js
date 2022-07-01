@@ -7,7 +7,7 @@ const Header = () => {
    return (
     <div className="header">
       <div className="subHeader">
-        <h1>Header</h1>1``
+        <h1>Header</h1>
         <h5>Total Items {totalItemCart.length}</h5>
       </div>
     </div>
