@@ -4,34 +4,49 @@ import { useDispatch } from "react-redux";
 import Header from "./Component/Header";
 import { productList } from "./redux/productAction";
 import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
 
 function App() {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.productReducer);
-  console.log({data})
 
-  const productDetails = {
-    name: "Lenevo",
-    type: "laptop",
-    price: "80000",
-    color: "grey",
-  };
+  const productListItems = useSelector((state) => state.productReducer);
   
+   useEffect(() => {
+    dispatch(productList());
+  }, []);
   return (
     <div className="App">
-      <Header/>
-      <button onClick={() => dispatch(addToCart(productDetails))}>
-        Add to Cart
-      </button>
-      <button onClick={() => dispatch(removeToCart(productDetails.name))}>
-       remove to cart
-      </button>
-      <button onClick={() => dispatch(emptyCart())}>
-        empty cart
-      </button>
-      <button onClick={() => dispatch(productList())}>
-        get product list
-      </button>
+      <Header />
+
+      <button onClick={() => dispatch(emptyCart())}>empty cart</button>
+
+      <div className="detailsContainer">
+        {productListItems.map((item, index) => {
+          return (
+            <div className="subContainer" key={item.index}>
+              <img
+                src={item.photo}
+                alt="product"
+                style={{
+                  width: "10rem",
+                  height: "10rem",
+                }}
+              />
+              <div>Name : {item.name} </div>
+              <div>Color : {item.color} </div>
+              <div>Brand : {item.brand} </div>
+              <div>Price: {item.price}</div>
+              <div>Category : {item.category} </div>
+              <button onClick={() => dispatch(addToCart(item))}>
+                Add to Cart
+              </button>
+              <button onClick={() => dispatch(removeToCart(item.id))}>
+                remove to cart
+              </button>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

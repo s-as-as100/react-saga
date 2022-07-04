@@ -7,7 +7,7 @@
             "price": 80000,
             "category": "Laptop",
             "brand": "Lenovo",
-            "photo": "https://www.google.com/imgres?imgurl=https%3A%2F%2F5.imimg.com%2Fdata5%2FIZ%2FWE%2FTV%2FSELLER-76766217%2Fdell-laptop-500x500.jpg&imgrefurl=https%3A%2F%2Fwww.indiamart.com%2Fproddetail%2Fold-dell-laptop-21913071748.html&tbnid=gJt7JYxSVI0iYM&vet=12ahUKEwjNvIn2vdf4AhVI_jgGHXqyCbwQMygCegUIARDPAQ..i&docid=iYIj7Kppc9xy2M&w=500&h=500&q=laptop%20product%20image&ved=2ahUKEwjNvIn2vdf4AhVI_jgGHXqyCbwQMygCegUIARDPAQ"
+            "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg"
         },
         {
             "id": 2,
@@ -16,7 +16,7 @@
             "price": 8500,
             "category": "mobile",
             "brand": "Real me",
-            "photo":"https://www.google.com/imgres?imgurl=https%3A%2F%2Fos-wordpress-media.s3.ap-south-1.amazonaws.com%2Fblog%2Fwp-content%2Fuploads%2F2022%2F04%2F09172659%2FRealme-9-03-Rear-design.jpg&imgrefurl=https%3A%2F%2Fonsitego.com%2Fblog%2Frealme-9-review%2F&tbnid=GRK-YWjja5mlCM&vet=12ahUKEwjK8rr7vtf4AhUzzaACHb4fDm8QMygMegUIARDQAQ..i&docid=hJRajt9_Jpsm_M&w=1920&h=1080&q=real%20me%20phone&ved=2ahUKEwjK8rr7vtf4AhUzzaACHb4fDm8QMygMegUIARDQAQ"
+            "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg"
         },
         {
             "id": 3,
@@ -34,7 +34,7 @@
             "price": 2000,
             "category": "lower",
             "brand": "Adidad",
-            "photo": "https://www.google.com/imgres?imgurl=https%3A%2F%2F5.imimg.com%2Fdata5%2FIZ%2FWE%2FTV%2FSELLER-76766217%2Fdell-laptop-500x500.jpg&imgrefurl=https%3A%2F%2Fwww.indiamart.com%2Fproddetail%2Fold-dell-laptop-21913071748.html&tbnid=gJt7JYxSVI0iYM&vet=12ahUKEwjNvIn2vdf4AhVI_jgGHXqyCbwQMygCegUIARDPAQ..i&docid=iYIj7Kppc9xy2M&w=500&h=500&q=laptop%20product%20image&ved=2ahUKEwjNvIn2vdf4AhVI_jgGHXqyCbwQMygCegUIARDPAQ"
+            "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg"
         }
     ]
 }
