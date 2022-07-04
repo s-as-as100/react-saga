@@ -46,7 +46,6 @@ const cartReducer = (state = initialState, action) => {
         numberOfCarts: state.numberOfCarts + 1,
       };
     case REMOVE_TO_CART:
-
       let quantity = state.carts[action.data].quantity;
       console.log(action.data, quantity)
       if(quantity>1) {
