@@ -1,11 +1,19 @@
 import { PRODUCT_LIST_SUCCESS } from "./constant";
 
-const productReducer = (data = [], action) => {
+const initialProductList ={
+     products:[]
+}
+
+
+const productReducer = (state= initialProductList, action) => {
   switch (action.type) {
     case PRODUCT_LIST_SUCCESS:
-      return [...action.data];
+      return {
+        ...state,
+        products:action.data
+      }
     default:
-      return data;
+      return state;
   }
 };
 

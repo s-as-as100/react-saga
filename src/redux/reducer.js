@@ -1,17 +1,68 @@
 import { ADD_TO_CART, EMPTY_CART, REMOVE_TO_CART } from "./constant";
 
-const cartReducer = (data = [], action) => {
+const initialState = {
+  numberOfCarts: 0,
+  carts: [],
+};
+
+const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART:
-      return [action.data, ...data];
+       if (state.numberOfCarts === 0) {
+        let carts = {
+          id: action.data.id,
+          quantity: 1,
+          name: action.data.name,
+          photo: action.data.photo,
+          category: action.data.category,
+          price: action.data.price,
+          color: action.data.color,
+        };
+        state.carts.push(carts);
+      } else {
+        let check = false;
+        state.carts.map((item, key) => {
+          if (item.id === action.data.id) {
+            state.carts[key].quantity++;
+            check = true;
+          }
+        });
+
+        if (!check) {
+          let cart = {
+            id: action.data.id,
+            quantity: 1,
+            name: action.data.name,
+            photo: action.data.photo,
+            category: action.data.category,
+            price: action.data.price,
+            color: action.data.color,
+          };
+          state.carts.push(cart);
+        }
+      }
+      return {
+        ...state,
+        numberOfCarts: state.numberOfCarts + 1,
+      };
     case REMOVE_TO_CART:
-      data.length = data.length ?data.length - 1 :[];
-      return [...data];
+
+      let quantity = state.carts[action.data].quantity;
+      console.log(action.data, quantity)
+      if(quantity>1) {
+        state.numberOfCarts--;
+        state.carts[action.data].quantity--;
+      }
+
+      return {
+        ...state,
+      };
+
     case EMPTY_CART:
-      data = [];
-      return [...data];
+      state = [];
+      return { ...state };
     default:
-      return data;
+      return state;
   }
 };
 

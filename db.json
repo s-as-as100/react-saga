@@ -1,40 +1,46 @@
 {
-    "product": [
-        {
-            "id": 1,
-            "name": "lenovo intel-5",
-            "color": "black",
-            "price": 80000,
-            "category": "Laptop",
-            "brand": "Lenovo",
-            "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg"
-        },
-        {
-            "id": 2,
-            "name": "Redmi 9 power",
-            "color": "black",
-            "price": 8500,
-            "category": "mobile",
-            "brand": "Real me",
-            "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg"
-        },
-        {
-            "id": 3,
-            "name": "Puma",
-            "color": "black",
-            "price": 1500,
-            "category": "T-shirt",
-            "brand": "Puma",
-            "photo":"https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg"
-         },
-        {
-            "id": 4,
-            "name": "adidas",
-            "color": "black",
-            "price": 2000,
-            "category": "lower",
-            "brand": "Adidad",
-            "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg"
-        }
-    ]
+  "product": [
+    {
+      "id": 1,
+      "name": "lenovo intel-5",
+      "color": "black",
+      "price": 80000,
+      "category": "Laptop",
+      "brand": "Lenovo",
+      "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg",
+      "count": 0
+    },
+    {
+      "id": 2,
+      "name": "Redmi 9 power",
+      "color": "black",
+      "price": 8500,
+      "category": "mobile",
+      "brand": "Real me",
+      "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg",
+      "count": 0
+    },
+    {
+      "id": 3,
+      "name": "Puma",
+      "color": "black",
+      "price": 1500,
+      "category": "T-shirt",
+      "brand": "Puma",
+      "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg",
+      "count":0
+
+    },
+    {
+      "id": 4,
+      "name": "adidas",
+      "color": "black",
+      "price": 2000,
+      "category": "lower",
+      "brand": "Adidad",
+      "photo": "https://m.media-amazon.com/images/I/71WNSDGhrdL._UL1500_.jpg",
+      "count":0
+
+    }
+  ]
 }

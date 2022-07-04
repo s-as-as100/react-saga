@@ -1,15 +1,20 @@
-import { ADD_TO_CART, EMPTY_CART, REMOVE_TO_CART } from "./constant";
+import { ADD_TO_CART, EMPTY_CART, REMOVE_TO_CART, UPDATE_PRODUCT_COUNT } from "./constant";
 
 export const addToCart = (data) => {
-  console.log({ data });
-  console.log("action called");
-  
-  return {
+   console.log("action called",data);
+   return {
     type: ADD_TO_CART,
     data 
   };
 };
 
+export const updateProductCount = (data) => {
+  console.log("action called update coubnt",data);
+  return {
+   type: UPDATE_PRODUCT_COUNT,
+   data 
+ };
+};
 
 export const removeToCart = (data) => {
   
