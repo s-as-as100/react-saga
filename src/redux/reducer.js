@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { ADD_TO_CART, EMPTY_CART, REMOVE_TO_CART } from "./constant";
 
 const initialState = {

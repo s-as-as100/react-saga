@@ -1,5 +1,5 @@
 import { takeEvery, put } from "redux-saga/effects";
-import { PRODUCT_LIST, PRODUCT_LIST_SUCCESS } from "./constant";
+import { PRODUCT_LIST, PRODUCT_LIST_SUCCESS, SEARCH_PRODUCT } from "./constant";
 
 function* getProducts() {
   let data = yield fetch("http://localhost:4000/product");
@@ -7,8 +7,16 @@ function* getProducts() {
   yield put({ type: PRODUCT_LIST_SUCCESS, data: result });
 }
 
+function* searchProducts(data) {
+  let result = yield fetch(`http://localhost:4000/product?q=${data.query}`);
+  result = yield result.json();
+  yield put({ type: PRODUCT_LIST_SUCCESS, data: result });
+}
+
 function* productSaga() {
   yield takeEvery(PRODUCT_LIST, getProducts);
+  yield takeEvery(SEARCH_PRODUCT, searchProducts);
+
 }
 
 export default productSaga;

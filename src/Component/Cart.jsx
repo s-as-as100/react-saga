@@ -5,8 +5,7 @@ import './Cart.css';
 const Cart = () => {
     const cartData = useSelector((state) => state.cartReducer.carts);
     const amount = cartData.length&& cartData.map(item => item.price).reduce((prev,next) => prev+next)
-    const totalAmount = cartData.reduce((prev, item) =>item.price ,0)
-    console.log(cartData,amount,"jilo");
+     console.log(cartData,amount,"jilo");
     return (
         <>
             <h1>Cart</h1>
@@ -24,7 +23,7 @@ const Cart = () => {
                             return(
                                 <tr key={index}>
                                 <td>{item.name}</td>
-                                <td>{item.brand}</td>
+                                <td>{item.quantity}</td>
                                 <td>{item.color}</td>
                                 <td>{item.price}</td>
                                 <td>{item.category}</td>
